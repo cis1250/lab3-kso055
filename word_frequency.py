@@ -33,12 +33,9 @@ user_sentence = input("Enter a sentence: ")
 
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
-    user_input = input("Enter a sentence: ")
+    user_sentence = input("Enter a sentence: ")
 
-sentence = user_sentence[:-1]
-
-sentence = sentence.lower()
-
+sentence = user_sentence[:-1].lower()
 words = sentence.split()
 
 other_words = []
