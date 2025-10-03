@@ -9,14 +9,14 @@ while True:
   user_response = input("How many terms of the Fibonacci sequence do you want? ")
 
 # Checking if the input contains only numbers
-if user_response.isdigit():
-  terms = int(user_response) # Converting the input into an integer
-  if terms > 0:
-    break # If it's a valid input(positive integer) then exit the loop
+  if user_response.isdigit():
+    terms = int(user_response) # Converting the input into an integer
+    if terms > 0:
+      break # If it's a valid input(positive integer) then exit the loop
+    else:
+      print("Please enter a positive integer.") # The input was either zero or negative
   else:
-    print("Please enter a positive integer.") # The input was either zero or negative
-else:
-  print("Please enter a positive integer.") # The input is not a number
+    print("Please enter a positive integer.") # The input is not a number
 
 # Initialize the first two numbers in the Fibonacci sequence
 a = 0
